@@ -1,4 +1,8 @@
 // preloader
+setTimeout(function(){
+    $('.preloader').css('display', 'none');
+}, 2000);
+
 $(window).load(function () {
     $('.preloader').fadeOut(1000); // set duration in brackets
 });
