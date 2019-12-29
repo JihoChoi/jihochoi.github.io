@@ -198,6 +198,7 @@ img {
 
 /* start divider */
 #divider {
+  background: #f8f8f8; /* TODO: */
   text-align: center;
   padding-top: 80px;
   padding-bottom: 80px;
