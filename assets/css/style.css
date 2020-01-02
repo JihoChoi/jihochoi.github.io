@@ -148,8 +148,7 @@ p {
   font-weight: bold;
   /* height: 70px; */
   height: 50px;
-  /* line-height: 35px; */
-  line-height: 20px;
+  line-height: 30px;
 }
 .navbar-default .nav li a {
   color: #666;
@@ -157,8 +156,7 @@ p {
   font-weight: bold;
   /* height: 70px; */
   height: 50px;
-  /* line-height: 40px; */
-  line-height: 20px;
+  line-height: 25px;
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus,
@@ -271,6 +269,24 @@ h3 .location {
 /* end experience */
 
 
+/* start research */
+#research {
+  background: #ffffff; /* TODO: */
+  /* text-align: center; */
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#research .fa {
+  color: #28a7e9;
+  font-size: 60px;
+}
+#research h3 {
+  /* font-size: 20px; */
+  font-size: 18px;
+}
+/* end research */
+
+
 /* start publications */
 #publications {
   background: #ffffff; /* TODO: */
@@ -287,7 +303,6 @@ h3 .location {
   font-size: 18px;
 }
 /* end publications */
-
 
 
 /* start projects */
