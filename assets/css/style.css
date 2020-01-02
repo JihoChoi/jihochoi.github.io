@@ -209,12 +209,18 @@ p {
   border-bottom: 2px solid #28a7e9;
 }
 
+h3 .location {
+  font-weight: lighter;
+  font-size: smaller;
+}
+
 /* Parent div (.row) should have "display: flex;" */
 .image-box {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin: auto;
 }
 .image-frame {
   vertical-align: middle;
@@ -229,25 +235,20 @@ p {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
-#education h3 .location {
-  font-weight: lighter;
-  font-size: smaller;
-}
 #education .fa {
   color: #28a7e9;
   font-size: 60px;
 }
 #education h3 {
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 18px;
 }
 /* end education */
 
 /* start experience */
 #experience {
-  background: #ffffff; /* TODO: */
-  /* text-align: center; */
-  /* padding-top: 80px; */
+  background: #f8f8f8; /* TODO: */
+  padding-top: 80px;
   padding-bottom: 80px;
 }
 #experience .fa {
@@ -255,9 +256,58 @@ p {
   font-size: 60px;
 }
 #experience h3 {
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 18px;
+}
+#experience .occupation {
+  font-weight: normal;
+}
+#experience .subject {
+  font-weight: normal;
+}
+#experience h4 {
+  font-size: 14px;
 }
 /* end experience */
+
+
+/* start publications */
+#publications {
+  background: #ffffff; /* TODO: */
+  /* text-align: center; */
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#publications .fa {
+  color: #28a7e9;
+  font-size: 60px;
+}
+#publications h3 {
+  /* font-size: 20px; */
+  font-size: 18px;
+}
+/* end publications */
+
+
+
+/* start projects */
+#projects {
+  background: #f8f8f8; /* TODO: */
+  /* text-align: center; */
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#projects .fa {
+  color: #28a7e9;
+  font-size: 60px;
+}
+#projects h3 {
+  /* font-size: 20px; */
+  font-size: 18px;
+}
+/* end projects */
+
+
 
 /* start divider */
 #divider {
