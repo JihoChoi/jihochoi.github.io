@@ -36,10 +36,11 @@ p {
   line-height: 1.6em;
 }
 /* img */
-img {
+/* TODO: */
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 /* img */
 
 /* overlay */
@@ -145,15 +146,19 @@ img {
   color: #28a7e9;
   font-size: 30px;
   font-weight: bold;
-  height: 70px;
-  line-height: 35px;
+  /* height: 70px; */
+  height: 50px;
+  /* line-height: 35px; */
+  line-height: 20px;
 }
 .navbar-default .nav li a {
   color: #666;
   font-size: 13px;
   font-weight: bold;
-  height: 70px;
-  line-height: 40px;
+  /* height: 70px; */
+  height: 50px;
+  /* line-height: 40px; */
+  line-height: 20px;
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus,
@@ -195,6 +200,64 @@ img {
   margin-top: 30px;
 }
 /* end home */
+
+
+/* start global */
+/* JIHO CHOI */
+
+.underline {
+  border-bottom: 2px solid #28a7e9;
+}
+
+/* Parent div (.row) should have "display: flex;" */
+.image-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.image-frame {
+  vertical-align: middle;
+}
+
+/* end global */
+
+/* start education */
+#education {
+  background: #ffffff; /* TODO: */
+  /* text-align: center; */
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#education h3 .location {
+  font-weight: lighter;
+  font-size: smaller;
+}
+#education .fa {
+  color: #28a7e9;
+  font-size: 60px;
+}
+#education h3 {
+  font-size: 20px;
+}
+/* end education */
+
+/* start experience */
+#experience {
+  background: #ffffff; /* TODO: */
+  /* text-align: center; */
+  /* padding-top: 80px; */
+  padding-bottom: 80px;
+}
+#experience .fa {
+  color: #28a7e9;
+  font-size: 60px;
+}
+#experience h3 {
+  font-size: 20px;
+}
+/* end experience */
 
 /* start divider */
 #divider {
