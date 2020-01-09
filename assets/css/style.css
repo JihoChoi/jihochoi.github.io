@@ -29,7 +29,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 /* end h1 group */
 p {
@@ -199,7 +199,6 @@ p {
 }
 /* end home */
 
-
 /* start global */
 /* JIHO CHOI */
 
@@ -230,8 +229,10 @@ h3 .location {
 #education {
   background: #ffffff; /* TODO: */
   /* text-align: center; */
-  padding-top: 80px;
-  padding-bottom: 80px;
+  /* padding-top: 80px;
+  padding-bottom: 80px; */
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 #education .fa {
   color: #28a7e9;
@@ -246,8 +247,8 @@ h3 .location {
 /* start experience */
 #experience {
   background: #f8f8f8; /* TODO: */
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 #experience .fa {
   color: #28a7e9;
@@ -268,13 +269,14 @@ h3 .location {
 }
 /* end experience */
 
-
 /* start research */
 #research {
   background: #ffffff; /* TODO: */
   /* text-align: center; */
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
+  /* padding-bottom: 80px; */
 }
 #research .fa {
   color: #28a7e9;
@@ -286,13 +288,12 @@ h3 .location {
 }
 /* end research */
 
-
 /* start publications */
 #publications {
   background: #ffffff; /* TODO: */
   /* text-align: center; */
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 #publications .fa {
   color: #28a7e9;
@@ -302,15 +303,31 @@ h3 .location {
   /* font-size: 20px; */
   font-size: 18px;
 }
-/* end publications */
 
+/* ordered / unordered list format */
+#publications ol {
+  list-style: none;
+}
+
+#publications ol > li:before {
+  content: attr(seq) ".";
+}
+
+#publications ul {
+  list-style: none;
+}
+
+#publications ul > li:before {
+  content: "";
+}
+/* end publications */
 
 /* start projects */
 #projects {
   background: #f8f8f8; /* TODO: */
   /* text-align: center; */
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 #projects .fa {
   color: #28a7e9;
@@ -321,8 +338,6 @@ h3 .location {
   font-size: 18px;
 }
 /* end projects */
-
-
 
 /* start divider */
 #divider {
@@ -390,7 +405,7 @@ h3 .location {
 /* end feature1 */
 
 /* start about */
-#about {
+/* #about {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -410,7 +425,7 @@ h3 .location {
   line-height: 40px;
   text-align: center;
   margin-right: 20px;
-}
+} */
 /* end about */
 
 /* start pricing */
