@@ -43,6 +43,10 @@ p {
 } */
 /* img */
 
+h3 {
+  font-size: 18px;
+}
+
 /* overlay */
 .overlay {
   width: 100vw;
@@ -242,10 +246,7 @@ h3 .location {
   color: #28a7e9;
   font-size: 60px;
 }
-#education h3 {
-  /* font-size: 20px; */
-  font-size: 18px;
-}
+
 /* end education */
 
 /* start experience */
@@ -258,10 +259,7 @@ h3 .location {
   color: #28a7e9;
   font-size: 60px;
 }
-#experience h3 {
-  /* font-size: 20px; */
-  font-size: 18px;
-}
+
 #experience .occupation {
   font-weight: normal;
 }
@@ -286,10 +284,7 @@ h3 .location {
   color: #28a7e9;
   font-size: 60px;
 }
-#research h3 {
-  /* font-size: 20px; */
-  font-size: 18px;
-}
+
 /* end research */
 
 /* start publications */
@@ -299,13 +294,11 @@ h3 .location {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-#publications .fa {
-  color: #28a7e9;
-  font-size: 60px;
+#publications .btn {
+  padding: 0 4px;
 }
-#publications h3 {
-  /* font-size: 20px; */
-  font-size: 18px;
+#publications .fa {
+  font-size: 12px;
 }
 
 /* ordered / unordered list format */
@@ -329,19 +322,27 @@ h3 .location {
 /* start projects */
 #projects {
   background: #f8f8f8; /* TODO: */
-  /* text-align: center; */
   padding-top: 40px;
   padding-bottom: 40px;
 }
-#projects .fa {
+
+/* end projects */
+
+/* start projects-panel */
+#projects-panel {
+  background: #f8f8f8; /* TODO: */
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#projects-panel .fa {
   color: #28a7e9;
   font-size: 60px;
 }
-#projects h3 {
-  /* font-size: 20px; */
-  font-size: 18px;
+#projects-panel h3 {
+  font-size: 20px;
 }
-/* end projects */
+/* end projects-panel */
 
 /* start divider */
 #divider {
@@ -358,6 +359,22 @@ h3 .location {
   font-size: 20px;
 }
 /* end divider */
+
+/* start under-construction */
+#under-construction {
+  background: #f8f8f8; /* TODO: */
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#under-construction .fa {
+  color: #28a7e9;
+  font-size: 60px;
+}
+#under-construction h3 {
+  font-size: 20px;
+}
+/* end under-construction */
 
 /* start feature */
 #feature {
@@ -563,13 +580,18 @@ footer
 */
 footer {
   background-color: #fff;
-  padding: 60px 0px;
+  /* padding: 60px 0px; */
+  padding: 20px 0px;
 }
 
 footer .social {
   overflow: hidden;
   text-align: right;
 }
+footer ul {
+  padding: 0;
+}
+
 
 footer .social li {
   margin: 0px 5px;
