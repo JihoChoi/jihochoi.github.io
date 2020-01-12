@@ -45,6 +45,7 @@ p {
 
 h3 {
   font-size: 18px;
+  font-weight: bold;
 }
 
 /* overlay */
@@ -162,7 +163,7 @@ h3 {
   font-weight: bold;
   /* height: 70px; */
   height: 50px;
-  line-height: 25px;
+  /* line-height: 25px; */
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus,
@@ -196,15 +197,39 @@ h3 {
   text-align: center;
   width: 100%;
 }
+#home h1 {
+  font-weight: bold;
+}
 #home p {
+  /* font-style: italic; */
   font-weight: 400;
-  font-style: italic;
+  font-size: 14px;
   line-height: 2em;
 }
+#home a {
+  color: white;
+}
+
 #home img {
   display: inline-block;
   margin-top: 30px;
 }
+
+/* up down animation */
+#home #down {
+  animation: action 0.4s infinite  alternate;
+  -webkit-animation: action 0.4s infinite  alternate;
+}
+@-webkit-keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+
 /* end home */
 
 /* start global */
@@ -212,6 +237,11 @@ h3 {
 
 .underline {
   border-bottom: 2px solid #28a7e9;
+}
+
+h3 .affiliation,
+h4 .affiliation {
+  font-weight: bold;
 }
 
 h3 .location {
@@ -340,8 +370,16 @@ h3 .location {
   font-size: 60px;
 }
 #projects-panel h3 {
-  font-size: 20px;
+  font-size: 16px;
+  /* font-weight: bold; */
+  /* text-transform: upperase; */
 }
+
+#projects-panel a {
+  text-decoration: underline;
+}
+
+
 /* end projects-panel */
 
 /* start divider */
@@ -592,7 +630,6 @@ footer ul {
   padding: 0;
 }
 
-
 footer .social li {
   margin: 0px 5px;
   display: inline-block;
@@ -669,6 +706,11 @@ footer .copyright {
   }
   #contact .overlay {
     padding-top: 40px;
+  }
+
+  /* TODO: */
+  .navbar-default .navbar-brand {
+    line-height: 30px;
   }
 }
 /* start media 360 */

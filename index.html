@@ -54,7 +54,7 @@
           <li><a href="#">More</a></li> -->
 
           <li><a href="#home">Home</a></li>
-          <li><a href="#education">About</a></li>
+          <li><a href="#about">About</a></li>
           <!-- <li><a href="#experience">Experience</a></li> -->
           <li><a href="#research">Research</a></li>
           <!-- <li><a href="#publications">Publications</a></li> -->
@@ -76,7 +76,7 @@
 
           <div class="col-md-10 wow fadeIn" data-wow-delay="0.3s">
             <div style="margin: auto;">
-              <h1 class="text-upper">Jiho Choi</h1>
+              <h1>Jiho Choi</h1>
               <!-- Biography -->
               <p class="tm-white">
                 I am a 2nd-year master's student at Seoul National University
@@ -96,11 +96,13 @@
               <!-- <img src="assets/images/software-img.png" class="img-responsive" alt="home img"> -->
             </div>
           </div>
-
           <div class="col-md-1"></div>
         </div>
+
+        <div id="down"><a href="#"><i class="icon fa fa-chevron-down"></i></a></div>
+
+        </divi>
       </div>
-    </div>
   </section>
   <!-- end home -->
 
@@ -140,7 +142,8 @@
         </div>
         <div class="col-md-8 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
           <h3>
-            Seoul National University<span class="location">, Seoul, Republic of Korea</span>
+            <span class="affiliation">Seoul National University</span>,
+            <span class="location">Seoul, Republic of Korea</span>
           </h3>
           <h5>
             M.S. Student in Computer Science &amp; Engineering, 2018 - Current
@@ -170,7 +173,8 @@
         <div class="col-md-2"></div>
         <div class="col-md-8 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
           <h3>
-            Purdue University<span class="location">, West Lafayette, IN, USA</span>
+            <span class="affiliation">Purdue University</span>,
+            <span class="location">West Lafayette, IN, USA</span>
           </h3>
           <h5>B.S. in Computer Science, Dec. 2017</h5>
           <ul>
@@ -222,8 +226,8 @@
         <div class="col-md-8 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
           <h3 class="occupation">Graduate Research Assistant</h3>
           <h4>
-            Social & Computer Network Lab. @ SNU, Seoul, South Korea, Jan.
-            2018 - CURRENT
+            <span class="affiliation">Social & Computer Network Lab. @ SNU</span>, Seoul, South Korea, Jan. 2018 -
+            CURRENT
           </h4>
           <ul>
             <li>TBA</li>
@@ -240,8 +244,7 @@
         <div class="col-md-8 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
           <h3 class="occupation">Software Development Engineer Intern</h3>
           <h4>
-            NAVER LABS Corp., Seongnam, Gyeonggi, South Korea, Jul. 2019 -
-            Jan. 2020
+            <span class="affiliation">NAVER LABS Corp.</span>, Seongnam, Gyeonggi, South Korea, Jul. 2019 - Jan. 2020
           </h4>
           <ul>
             <li>TBA</li>
@@ -257,7 +260,10 @@
         <div class="col-md-2"></div>
         <div class="col-md-8 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
           <h3 class="occupation">Software Engineering Intern</h3>
-          <h4>Fasoo Inc., Seoul, South Korea, May. 2017 - Aug. 2017</h4>
+          <!-- <h4>Fasoo Inc., Seoul, South Korea, May. 2017 - Aug. 2017</h4> -->
+          <h4>
+            <span class="affiliation">Fasoo Inc.</span>, Seoul, South Korea, May. 2017 - Aug. 2017
+          </h4>
           <ul>
             <li>TBA</li>
           </ul>
@@ -362,7 +368,10 @@
                 <li><u>Jiho Choi</u>, Sihyun Jeong, Chong-kwon Kim</li>
                 <li>
                   KIISE Transactions on Computing Practices, Vol.26, No.2,
-                  Feb. 2020. (TBA)
+                  Feb. 2020.
+                  <a class="btn btn-warning" target="_blank" disabled="disabled" href="">
+                    <i class="fa fa-link"></i>
+                  </a> (TBA)
                 </li>
               </ul>
             </li>
@@ -404,66 +413,136 @@
         </div>
 
         <div class="col-md-10 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
-          <h3>TBA</h3>
+          <h3>TO BE UPDATED</h3>
+          <p>Previews & source code will be updated soon.</p>
         </div>
       </div>
     </div>
   </section>
   <!-- end projects -->
 
+
+  <!--
+  Rumor Diffusion Network Analysis
+  Movie / Actor Network Analysis
+  Big Data Analytics and Deep Learning Systems
+    - Apache Nemo / Apache Beam
+  -->
+
+  <!--
+    [x] (CS 252) myShell
+    [x] (CS 352) MiniScalar (Programming Language & Interpreter)
+    [x] (CS 354) XINU OS Modification (process scheduling, inter-process communication)
+    [x] (CS 307) Sentinel Data Vault
+    [x] (CS 408) Classmate Finder Node.js App
+    [x] (CS 422) Remote File Sharing System, myTunnel (VPN)
+    [x] (CS 426) Sniff & Spoof
+    [ ] (CS 448) Apache Hadoop
+  -->
+
+  <!-- https://fontawesome.com/v4.7.0/icons/ -->
+
   <!-- start projects-panel -->
   <section id="projects-panel">
     <div class="container">
+
+
       <div class="row">
         <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
-          <i class="fa fa-laptop"></i>
-          <h3 class="text-uppercase">PROJECT 01</h3>
+          <i class="fa fa-automobile"></i>
+          <h3>LiDAR Registration Tool</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation.
+            Point Cloud and Aerial Image Annotation Tool (Client-side)
           </p>
         </div>
         <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
-          <i class="fa fa-twitter"></i>
-          <h3 class="text-uppercase">PROJECT 02</h3>
+          <i class="fa fa-spinner"></i>
+          <h3>Diffusion Network Analysis</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation.
+            Rumor Diffusion Network Analysis for Message Classification in Social Media
           </p>
         </div>
         <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
-          <i class="fa fa-font"></i>
-          <h3 class="text-uppercase">PROJECT 03</h3>
+          <i class="fa fa-film"></i>
+          <h3>Movie Network Analysis</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation.
+            Graph Mining and Network Analysis Project
           </p>
         </div>
       </div>
       <br>
+
       <div class="row">
         <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
-          <i class="fa fa-facebook"></i>
-          <h3 class="text-uppercase">PROJECT 04</h3>
+          <i class="fa fa-laptop"></i>
+          <h3>Kernel Modification</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation.
+            Process Scheduling, Inter Process Communication, ... Projects for
+            <a href="https://en.wikipedia.org/wiki/Xinu" target="_blank">XINU</a> OS
           </p>
         </div>
         <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
-          <i class="fa fa-facebook"></i>
-          <h3 class="text-uppercase">PROJECT 05</h3>
+          <i class="fa fa-sitemap"></i>
+          <h3>File Sharing System</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation.
+            uTorrent like Remote File Sharing System built with Socket Programming
+          </p>
+        </div>
+        <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+          <i class="fa fa-code"></i>
+          <h3>Mini Scalar</h3>
+          <p>
+            Programming Language Implementation, Interpreter / GC (VM) Modification
           </p>
         </div>
       </div>
+      <br>
+
+      <div class="row">
+        <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+          <i class="fa fa-asterisk"></i>
+          <h3>My Own Shell</h3>
+          <p>
+            Bash like Shell Implementation with Lax/Yacc
+          </p>
+        </div>
+        <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+          <i class="fa fa-lock"></i>
+          <h3>Sniff & Spoof</h3>
+          <p>
+            Packet Sniff & Spoof Project, Man-in-the-middle attack<br>(CS426 Computer Security @ Purdue University)
+          </p>
+        </div>
+        <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+          <i class="fa fa-users"></i>
+          <h3>Classmate Finder</h3>
+          <p>
+            Bulletin Board Style Classmate Finder Application built with Node.js
+          </p>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+          <i class="fa fa-database"></i>
+          <h3>Sentinel Data Vault</h3>
+          <p>
+            GUI DB managing software support encryption <a href="https://en.wikipedia.org/wiki/Salt_(cryptography)"
+              target="_blank">(salting)</a>
+          </p>
+        </div>
+        <!-- <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+          <i class="fa fa-server"></i>
+          <h3></h3>
+          <p>
+          </p>
+        </div> -->
+      </div>
+
+
+
+
     </div>
   </section>
   <!-- end projects-panel -->
