@@ -150,6 +150,8 @@ h3 {
 }
 .navbar-default .navbar-brand {
   color: #28a7e9;
+  color: #28a7e9;
+
   font-size: 30px;
   font-weight: bold;
   /* height: 70px; */
@@ -274,6 +276,7 @@ h3 .location {
 }
 #education .fa {
   color: #28a7e9;
+
   font-size: 60px;
 }
 
@@ -412,6 +415,15 @@ h3 .location {
 #under-construction h3 {
   font-size: 20px;
 }
+
+#under-construction .btn {
+  padding: 0;
+}
+#under-construction .fa {
+  font-size: 14px;
+  color: white;
+}
+
 /* end under-construction */
 
 /* start feature */
@@ -639,6 +651,7 @@ footer .social li a {
   color: #fff;
   text-align: center;
   background-color: #00b4c6;
+
   width: 40px;
   height: 40px;
   line-height: 40px;
