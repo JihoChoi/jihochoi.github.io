@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My first three.js app</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    canvas {
+      position: fixed;
+      width: 400px;
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="position:absolute; height:200px; width: 200px;">HELLO</div>
+
+  <script src="../assets/js/three.js"></script>
+  <script src="../assets/js/controls/OrbitControls.js"></script>
+
+  <script>
+    var scene = new THREE.Scene();
+    // var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
+
+    var renderer = new THREE.WebGLRenderer({ alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(500, 500);
+    renderer.setClearColor(0x000000, 0);
+    document.body.appendChild(renderer.domElement);
+
+    var geometry = new THREE.BoxGeometry(1, 1, 1);
+    var geometry = new THREE.SphereGeometry(0.5, 32, 32);
+    var material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+    var group = new THREE.Group();
+
+    // JIHO CHOI
+
+    var camera_pivot = new THREE.Object3D()
+    var Y_AXIS = new THREE.Vector3(0, 1, 0);
+    var Y_AXIS = new THREE.Vector3(0, -1, 0);
+
+    scene.add(camera_pivot);
+    camera_pivot.add(camera);
+    camera.position.set(50, 50, 50);
+    camera.lookAt(camera_pivot.position);
+
+
+    for (i = 0; i <= 100; i += 20) {
+      for (j = 0; j <= 100; j += 20) {
+        var material = new THREE.MeshBasicMaterial({ color: Math.random() * 0xffffff });
+        var point = new THREE.Mesh(geometry, material);
+        // point.position.set(i * Math.random(), i * Math.random(), 0)
+        // x = i * Math.random()
+        r = 150
+        x = i
+        y = j
+        z = Math.sqrt(r * r - x * x - y * y)
+        console.log(x, y, z)
+
+        point.position.set(x, y, z)
+        group.add(point);
+        point = new THREE.Mesh(geometry, material);
+        point.position.set(x, y, -z)
+        group.add(point);
+        point = new THREE.Mesh(geometry, material);
+        point.position.set(x, -y, z)
+        group.add(point);
+        point = new THREE.Mesh(geometry, material);
+        point.position.set(x, -y, -z)
+        group.add(point);
+        point = new THREE.Mesh(geometry, material);
+        point.position.set(-x, y, z)
+        group.add(point);
+        point = new THREE.Mesh(geometry, material);
+        point.position.set(-x, y, -z)
+        group.add(point);
+        point = new THREE.Mesh(geometry, material);
+        point.position.set(-x, -y, z)
+        group.add(point);
+        point = new THREE.Mesh(geometry, material);
+        point.position.set(-x, -y, -z)
+        group.add(point);
+      }
+    }
+
+
+    scene.add(group);
+
+    var controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.update();
+    camera.position.z = 5;
+    camera.position.z = 0;
+    var animate = function () {
+      requestAnimationFrame(animate);
+      // group.rotation.x += 0.01;
+      // group.rotation.y += 0.005;
+      camera_pivot.rotateOnAxis(Y_AXIS, 0.02);
+      controls.update();
+      renderer.render(scene, camera);
+    };
+    animate();
+  </script>
+
+</body>
+
+</html>
