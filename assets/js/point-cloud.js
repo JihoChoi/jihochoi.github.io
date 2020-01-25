@@ -1,4 +1,8 @@
 container = document.getElementById("point-cloud");
+window.addEventListener("resize", onWindowResize, false);
+
+
+
 
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(
@@ -12,8 +16,6 @@ container.appendChild(renderer.domElement);
 
 var geometry = new THREE.SphereGeometry(1, 32, 32);
 var group = new THREE.Group();
-
-// JIHO CHOI
 
 var camera_pivot = new THREE.Object3D();
 scene.add(camera_pivot);
@@ -33,7 +35,6 @@ for (x = -radius; x <= radius; x += 10) {
     var point
     z = Math.sqrt(radius * radius - x * x - y * y);
     if (Number.isNaN(z)) {
-      // console.log(x, y, z);
       continue;
     }
 
@@ -43,24 +44,6 @@ for (x = -radius; x <= radius; x += 10) {
     point = new THREE.Mesh(geometry, material);
     point.position.set(x, y, -z);
     group.add(point);
-    // point = new THREE.Mesh(geometry, material);
-    // point.position.set(x, -y, z);
-    // group.add(point);
-    // point = new THREE.Mesh(geometry, material);
-    // point.position.set(x, -y, -z);
-    // group.add(point);
-    // point = new THREE.Mesh(geometry, material);
-    // point.position.set(-x, y, z);
-    // group.add(point);
-    // point = new THREE.Mesh(geometry, material);
-    // point.position.set(-x, y, -z);
-    // group.add(point);
-    // point = new THREE.Mesh(geometry, material);
-    // point.position.set(-x, -y, z);
-    // group.add(point);
-    // point = new THREE.Mesh(geometry, material);
-    // point.position.set(-x, -y, -z);
-    // group.add(point);
   }
 }
 
@@ -68,6 +51,15 @@ scene.add(group);
 
 var controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.update();
+
+
+
+function onWindowResize() {
+  camera.aspect = container.offsetWidth / container.offsetHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(container.offsetWidth, container.offsetHeight);
+}
+
 
 var animate = function () {
   requestAnimationFrame(animate);

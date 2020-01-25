@@ -231,6 +231,17 @@ h3 {
   100% { transform: translateY(-10px); }
 }
 
+/* point cloud */
+
+#point-cloud {
+  width: 500px;
+  height: 300px;
+  margin: 50px auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
 
 /* end home */
 
@@ -730,6 +741,14 @@ footer .copyright {
 @media screen and (max-width: 360px) {
   .pricing {
     padding-bottom: 40px;
+  }
+}
+/* end media 360 */
+
+/* start media 500 */
+@media screen and (max-width: 500px) {
+  #point-cloud {
+    width: 95%;
   }
 }
 /* end media 360 */
