@@ -52,6 +52,7 @@ h3 {
 .overlay {
   width: 100vw;
   height: calc(100vh - 100px);
+  height: calc(100vh - 55px);
   background: rgba(0, 0, 0, 0.4);
   background: rgba(50, 50, 50, 0.75);
   padding-top: 100px;
@@ -147,6 +148,8 @@ h3 {
   border: none;
   box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
   margin: 0 !important;
+
+  position: sticky;
 }
 .navbar-default .navbar-brand {
   color: #28a7e9;
@@ -198,6 +201,7 @@ h3 {
   /* margin-top: 70px; */
   text-align: center;
   width: 100%;
+  height: calc(100vh - 55px);
 }
 #home h1 {
   font-weight: bold;
