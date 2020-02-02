@@ -154,13 +154,15 @@ h3 {
 .navbar-default .navbar-brand {
   color: #28a7e9;
   color: #28a7e9;
+  /* color: #286bad; */
 
   font-size: 30px;
   font-weight: bold;
   /* height: 70px; */
   height: 50px;
+  /* line-height: 15px; */
   /* line-height: 30px; */
-  line-height: 15px;
+  line-height: 25px;
 }
 .navbar-default .nav li a {
   color: #666;
@@ -174,6 +176,8 @@ h3 {
 .navbar-default .nav li a:focus,
 .navbar-default .nav li a.current {
   color: #28a7e9;
+  /* color: #286bad; */
+  /* background: #286bad; */
 }
 
 .navbar-default .navbar-toggle {
