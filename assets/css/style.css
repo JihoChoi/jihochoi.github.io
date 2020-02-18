@@ -48,6 +48,13 @@ h3 {
   font-weight: bold;
 }
 
+/* description, abbreviation */
+abbr[title] {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
+
 /* overlay */
 .overlay {
   width: 100vw;
@@ -227,16 +234,24 @@ h3 {
 
 /* up down animation */
 #home #down {
-  animation: action 0.4s infinite  alternate;
-  -webkit-animation: action 0.4s infinite  alternate;
+  animation: action 0.4s infinite alternate;
+  -webkit-animation: action 0.4s infinite alternate;
 }
 @-webkit-keyframes action {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 @keyframes action {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 /* point cloud */
@@ -247,9 +262,6 @@ h3 {
   margin: 50px auto;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
-
-
-
 
 /* end home */
 
@@ -308,10 +320,9 @@ h3 .location {
   padding-bottom: 40px;
 }
 #experience .fa {
-  color: #28a7e9;
-  font-size: 60px;
+  color: white;
+  font-size: 12px;
 }
-
 #experience .occupation {
   font-weight: normal;
 }
@@ -320,6 +331,11 @@ h3 .location {
 }
 #experience h4 {
   font-size: 14px;
+}
+#experience .btn {
+  padding: 0 4px;
+}
+#experience .fa {
 }
 /* end experience */
 
@@ -400,7 +416,6 @@ h3 .location {
 #projects-panel a {
   text-decoration: underline;
 }
-
 
 /* end projects-panel */
 

@@ -1,4 +1,5 @@
-# jihochoi.github.io
+## Jiho's Web
+
 🏡 Jiho's Personal Website
 
 ### Overview
@@ -9,6 +10,7 @@
 
 ### References
 - TemplateMo
+- https://fontawesome.com/v4.7.0/icons/
 - https://favicon.io/favicon-generator/
 - Projects
     - Tetris
