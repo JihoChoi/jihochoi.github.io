@@ -18,6 +18,15 @@
   <meta name="description" content="" />
   <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.ico" />
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150924615-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-150924615-2');
+  </script>
+
   <link rel="stylesheet" href="assets/css/animate.min.css" />
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
@@ -257,12 +266,11 @@
           <ul>
             <li>TBA /
               <a class="btn btn-info" target="_blank"
-                href="https://youtu.be/VSXYXLNSguI">
-                <abbr title="slides"><i class="fa fa-video-camera"></i></abbr>
-              </a>
-              <a class="btn btn-info" target="_blank"
                 href="https://drive.google.com/file/d/1skHsV9j4mgUOre7Yv_Ez7gPmu1goELv3/view?usp=sharing">
                 <abbr title="slides"><i class="fa fa-sticky-note"></i></abbr>
+              </a>
+              <a class="btn btn-info" target="_blank" href="https://youtu.be/VSXYXLNSguI">
+                <abbr title="video"><i class="fa fa-video-camera"></i></abbr>
               </a>
             </li>
           </ul>
@@ -336,7 +344,8 @@
         <div class="col-md-10 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
           <h3>Interest:</h3>
           <ul>
-            <li>Social Network Analysis & Graph Mining</li>
+            <li>Social Network Analysis & Evolving Graph</li>
+            <li>Graph Mining & Graph Neural Network</li>
             <li>Data Mining & Machine Learning</li>
           </ul>
         </div>
@@ -386,9 +395,13 @@
                 <li>
                   KIISE Transactions on Computing Practices, Vol.26, No.2,
                   Feb. 2020.
-                  <a class="btn btn-warning" target="_blank" disabled="disabled" href="">
+                  <a class="btn btn-warning" target="_blank"
+                    href="https://dbpia.co.kr/journal/articleDetail?nodeId=NODE09301427">
                     <i class="fa fa-link"></i>
-                  </a> (TBA)
+                  </a>
+                  <!-- <a class="btn btn-warning" target="_blank" disabled="disabled" href="">
+                    <i class="fa fa-link"></i>
+                  </a> (TBA) -->
                 </li>
               </ul>
             </li>
