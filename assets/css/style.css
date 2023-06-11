@@ -20,6 +20,7 @@ body {
   color: #fff;
 }
 
+
 /* start h1 group */
 h1 {
   margin-top: 0;
@@ -777,3 +778,19 @@ footer .copyright {
   }
 }
 /* end media 360 */
+
+
+
+
+
+
+
+
+
+
+
+
+.link {
+  color: red;
+  text-decoration: underline;
+}
